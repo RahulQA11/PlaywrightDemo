@@ -13,7 +13,6 @@ test('test', async ({ page }) => {
   //await page.getByRole('button', { name: 'Update resume' }).click();
   await page.locator('#attachCV').setInputFiles('./ResumeFolder/QATeamLeadRahulSharmaCV2.pdf');
   await expect(page.getByText('Resume has been successfully')).toBeVisible();
-  await page.pause()
 
 
 });
