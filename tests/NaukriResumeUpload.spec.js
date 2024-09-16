@@ -11,7 +11,7 @@ test('test', async ({ page }) => {
   await page.locator('.nI-gNb-bar1').click();
   await page.getByRole('link', { name: 'View & Update Profile' }).click();
   //await page.getByRole('button', { name: 'Update resume' }).click();
-  await page.locator('#attachCV').setInputFiles('./ResumeFolder/QATeamLeadRahulSharmaCV2.pdf');
+  await page.locator('#attachCV').setInputFiles('./ResumeFolder/QATeamLeadRahulSharmaCV.pdf');
   await expect(page.getByText('Resume has been successfully')).toBeVisible();
 
 
